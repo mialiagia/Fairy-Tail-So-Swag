@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fairy Tail Comments</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Fairy Tail Comments</h1>
+        <a href="index.html">← Back to Home</a>
+    </div>
+
+    <div class="search-wrapper">
+        <input type="text" id="search-input" placeholder="Search characters, guilds, magic...">
+        <button id="search-button">Search</button>
+        <div id="suggestions" class="suggestions-dropdown"></div>
+    </div>
+
+    <div class="comments-container">
+        <div class="add-comment">
+            <h2>Leave a Comment</h2>
+            <form id="comment-form">
+                <input type="text" id="name-input" placeholder="Your name" required>
+                <textarea id="comment-input" placeholder="Your comment about Fairy Tail..." required></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+        </div>
+
+        <div class="comments-list">
+            <h2>Previous Comments</h2>
+            <div id="comments-display">
+            </div>
+        </div>
+    </div>
+
+    <div class="page-nav">
+        <button onclick="goBack()" class="back-button">← Previous</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
